@@ -48,7 +48,8 @@
     <p>Aucune inscription, aucune adresse e-mail, aucun identifiant. Nous n'exploitons aucun serveur : une partie se joue entièrement entre les téléphones présents, sur votre réseau local. Rien ne nous est envoyé.</p>
     <h2>2. Votre pseudo</h2>
     <p>Le pseudo que vous choisissez est enregistré sur votre téléphone, pour vous le proposer à la prochaine partie. Pendant une partie, il est envoyé au téléphone du meneur, sur votre réseau wifi, puis affiché aux autres joueurs de la partie. Il n'est conservé nulle part ailleurs, et le meneur l'oublie quand la partie s'arrête.</p>
-    <p>Si la sauvegarde Android est activée sur votre téléphone, ce pseudo peut être copié dans votre propre espace de sauvegarde Google, comme les réglages de toute application.</p>
+    <p>L'application tire aussi, une seule fois, un jeton aléatoire qu'elle garde sur le téléphone. Il ne contient rien sur vous ni sur l'appareil, et n'est envoyé qu'au meneur de la partie, sur votre réseau local, pour vous rendre votre place après une coupure, et pour qu'un joueur retiré par le meneur ne puisse pas revenir dans cette partie.</p>
+    <p>Si la sauvegarde Android est activée sur votre téléphone, ce pseudo et ce jeton peuvent être copiés dans votre propre espace de sauvegarde Google, comme les réglages de toute application.</p>
     <h2>3. La caméra</h2>
     <p>La caméra sert uniquement à scanner le QR code affiché par le meneur. L'image est analysée sur le téléphone, par la bibliothèque de lecture de codes de Google (ML Kit), et n'est ni enregistrée ni envoyée.</p>
     <p>Quand vous scannez un QR code, cette bibliothèque envoie à Google des données de diagnostic : modèle et version du système de l'appareil, version de l'application, mesures de performance, codes d'erreur et un identifiant propre à cette installation. Elles sont chiffrées pendant leur transfert, servent uniquement au diagnostic et aux statistiques d'utilisation de la bibliothèque, et ne sont transmises à aucun autre tiers. Détail : <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></p>
@@ -69,7 +70,8 @@
     <p>No sign-up, no email address, no identifier. We run no server: a game is played entirely between the phones in the room, over your local network. Nothing is sent to us.</p>
     <h2>2. Your nickname</h2>
     <p>The nickname you choose is saved on your phone, so it can be suggested next time. During a game, it is sent to the host's phone over your wifi network, then shown to the other players in the game. It is not kept anywhere else, and the host forgets it when the game ends.</p>
-    <p>If Android backup is turned on, this nickname may be copied to your own Google backup, like any app's settings.</p>
+    <p>The app also draws, once, a random token that it keeps on the phone. It contains nothing about you or the device, and is only sent to the game's host, over your local network, to give you back your place after a dropout, and so that a player removed by the host cannot come back into that game.</p>
+    <p>If Android backup is turned on, this nickname and this token may be copied to your own Google backup, like any app's settings.</p>
     <h2>3. The camera</h2>
     <p>The camera is only used to scan the QR code shown by the host. The image is analysed on the phone by Google's barcode scanning library (ML Kit), and is neither saved nor sent.</p>
     <p>When you scan a QR code, this library sends Google diagnostic data: device model and OS version, app version, performance metrics, error codes and an identifier specific to this installation. It is encrypted in transit, used only for the library's diagnostics and usage analytics, and not passed to any other third party. Details: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></p>
