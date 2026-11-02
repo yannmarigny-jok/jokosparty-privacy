@@ -45,11 +45,13 @@
     <p class="meta">Dernière mise à jour : 2 novembre 2026</p>
     <p>JokosParty transforme des téléphones en buzzers de quiz, sur un même réseau wifi. L'application fonctionne sans compte et sans serveur qui nous appartienne. Cette page décrit les seules données qu'elle manipule.</p>
     <h2>1. Aucun compte, aucun serveur</h2>
-    <p>Aucune inscription, aucune adresse e-mail, aucun identifiant. Nous n'exploitons aucun serveur : une partie se joue entièrement entre les téléphones présents, sur votre réseau local. Rien ne nous est envoyé.</p>
+    <p>Aucune inscription, aucune adresse e-mail, aucun compte à créer. Nous n'exploitons aucun serveur : une partie se joue entièrement entre les téléphones présents, sur votre réseau local. Rien ne nous est envoyé.</p>
     <h2>2. Votre pseudo</h2>
     <p>Le pseudo que vous choisissez est enregistré sur votre téléphone, pour vous le proposer à la prochaine partie. Pendant une partie, il est envoyé au téléphone du meneur, sur votre réseau wifi, puis affiché aux autres joueurs de la partie. Il n'est conservé nulle part ailleurs, et le meneur l'oublie quand la partie s'arrête.</p>
     <p>L'application tire aussi, une seule fois, un jeton aléatoire qu'elle garde sur le téléphone. Il ne contient rien sur vous ni sur l'appareil, et n'est envoyé qu'au meneur de la partie, sur votre réseau local, pour vous rendre votre place après une coupure, et pour qu'un joueur retiré par le meneur ne puisse pas revenir dans cette partie.</p>
-    <p>Si la sauvegarde Android est activée sur votre téléphone, ce pseudo et ce jeton peuvent être copiés dans votre propre espace de sauvegarde Google, comme les réglages de toute application.</p>
+    <p>Si vous menez des parties « Réponses écrites », les questions que vous saisissez pour ces parties, avec leurs réponses, sont enregistrées sur votre téléphone et nulle part ailleurs.</p>
+    <p>Pendant une partie « Réponses écrites », le téléphone du meneur envoie le texte des questions aux téléphones des joueurs, et chaque joueur envoie sa réponse au téléphone du meneur, uniquement sur votre réseau local. Rien de tout cela n'est gardé après la partie, ni envoyé ailleurs.</p>
+    <p>Si la sauvegarde Android est activée sur votre téléphone, ce pseudo, ce jeton et vos listes de questions peuvent être copiés dans votre propre espace de sauvegarde Google, comme les réglages de toute application.</p>
     <h2>3. La caméra</h2>
     <p>La caméra sert uniquement à scanner le QR code affiché par le meneur. L'image est analysée sur le téléphone, par la bibliothèque de lecture de codes de Google (ML Kit), et n'est ni enregistrée ni envoyée.</p>
     <p>Quand vous scannez un QR code, cette bibliothèque envoie à Google des données de diagnostic : modèle et version du système de l'appareil, version de l'application, mesures de performance, codes d'erreur et un identifiant propre à cette installation. Elles sont chiffrées pendant leur transfert, servent uniquement au diagnostic et aux statistiques d'utilisation de la bibliothèque, et ne sont transmises à aucun autre tiers. Détail : <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></p>
@@ -67,11 +69,13 @@
     <p class="meta">Last updated: November 2, 2026</p>
     <p>JokosParty turns phones into quiz buzzers on the same wifi network. The app works without an account and without any server of ours. This page describes the only data it handles.</p>
     <h2>1. No account, no server</h2>
-    <p>No sign-up, no email address, no identifier. We run no server: a game is played entirely between the phones in the room, over your local network. Nothing is sent to us.</p>
+    <p>No sign-up, no email address, no account to create. We run no server: a game is played entirely between the phones in the room, over your local network. Nothing is sent to us.</p>
     <h2>2. Your nickname</h2>
     <p>The nickname you choose is saved on your phone, so it can be suggested next time. During a game, it is sent to the host's phone over your wifi network, then shown to the other players in the game. It is not kept anywhere else, and the host forgets it when the game ends.</p>
     <p>The app also draws, once, a random token that it keeps on the phone. It contains nothing about you or the device, and is only sent to the game's host, over your local network, to give you back your place after a dropout, and so that a player removed by the host cannot come back into that game.</p>
-    <p>If Android backup is turned on, this nickname and this token may be copied to your own Google backup, like any app's settings.</p>
+    <p>If you host "Written answers" games, the questions you type in for these games, with their answers, are saved on your phone and nowhere else.</p>
+    <p>During a "Written answers" game, the host's phone sends the text of the questions to the players' phones, and each player sends their answer to the host's phone, only over your local network. None of this is kept after the game, or sent anywhere else.</p>
+    <p>If Android backup is turned on, this nickname, this token and your question lists may be copied to your own Google backup, like any app's settings.</p>
     <h2>3. The camera</h2>
     <p>The camera is only used to scan the QR code shown by the host. The image is analysed on the phone by Google's barcode scanning library (ML Kit), and is neither saved nor sent.</p>
     <p>When you scan a QR code, this library sends Google diagnostic data: device model and OS version, app version, performance metrics, error codes and an identifier specific to this installation. It is encrypted in transit, used only for the library's diagnostics and usage analytics, and not passed to any other third party. Details: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></p>
